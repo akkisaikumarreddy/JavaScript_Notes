@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Console in JavaScript</title>
+
+    <script src="index.js"></script>
+
+</head> 
+
+<body>
+    <h1>Console in JavaScript</h1>
+
+    <p>
+        The console object provides access to the browser's debugging console (or terminal in Node.js).<br>
+        It is used to log information, debug code, and interact with the runtime environment during development.
+    </p>
+
+    <h2>1. Console.log()</h2>
+
+    <p>The console.log() function logs general information to the console.<br>This is one of the most commonly used methods for debugging in JavaScript.</p>
+
+    <h2>2. console.error()</h2>
+
+    <p>The console .error() function in JavaScript Logs error messages to the console. Typically displayed in red.<br>It is used to display an error message on the console.</p>
+
+    <h2>3. console .warn()</h2>
+
+    <p>The console. warn() function Logs warnings on to the console to warn the user about certain scenarios, typically displayed in yellow.</p>
+
+    <h2>4. console.info()</h2>
+
+    <p>
+        The console.info() logs informational messages, which usually appear as standard logs but can be styled differently in some environments.<br>
+        Using the %c flag and passing the style object as the second parameter to the function can be used to style the info message
+    </p>
+
+    <h2>5. console .table()</h2>
+
+    <p>
+        console.table() is a method that displays data in a structured table format, making it easier to read and compare.<br>
+        It takes arrays or objects and organizes their properties or elements into rows and columns, helping with debugging or analyzing large or complex datasets.
+    </p>
+
+    <h2>6. console .time() & console .timeEnd()</h2>
+
+    <p>
+        The console.time() method starts a timer with a specified label, and console.timeEnd() stops the timer and logs the elapsed time in milliseconds.<br>
+        These methods are useful for measuring how long a block of code takes to execute.
+    </p>
+
+    <h2>7. console.assert()</h2>
+
+    <p>console.assert() logs an error message if the given condition is false, helping to catch issues during development. If the condition is true, it produces no output.</p>
+
+    <h2>8. console .group() and console.groupEnd()</h2>
+
+    <p>The console.group() and console.groupEnd() methods let you group related logs together in the console. This makes it easier to organize and read logs, especially when debugging.</p>
+
+    <h2>9. console.count()</h2>
+
+    <p>
+        console.count() logs the number of times it has been called with a specific label.<br>
+        It helps track how many times a particular code block or function is executed during runtime.
+    </p>
+
+    <h2>10. console.trace()</h2>
+
+    <p>
+        The console.trace() method outputs a stack trace to the console, showing the path your code took to reach the point where it was called.<br>
+        This helps track the flow of execution and identify where a function was invoked.
+    </p>
+
+</body>
+
+</html>
