@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            margin: 5px 0 10px 0;
+            background-color: aquamarine;
+        }
+
+        h2 {
+            color: crimson;
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "Content changed"
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Internal JavaScript (Within &lt;script&gt; Tag)</h1>
+
+    <p>You can write JavaScript code inside the &lt;script&gt; tag within the HTML file. This is known as internal JavaScript and is commonly placed inside the &lt;head&gt; or &Lt;body&gt; section of the HTML document.</p>
+
+    <h2>JavaScript Code Inside &lt;body&gt; Tag</h2>
+
+    <p>
+        JavaScript can also be placed inside the &lt;body&gt; section of an HTML page.<br>
+        Typically, scripts placed at the end of the &lt;body&gt; load after the content, which can be useful if your script depends on the DOM being fully loaded.
+    </p>
+
+    <h3 id="demo" style="color: rgb(30, 75, 210);">AKKI Sai Kumar Reddy</h3>
+
+    <button type="button" onclick="myFun()">Click Here</button>
+
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "Content changed!";
+        }
+    </script>
+
+</body>
+
+</html>
