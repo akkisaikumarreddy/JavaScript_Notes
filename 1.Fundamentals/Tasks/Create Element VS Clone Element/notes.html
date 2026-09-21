@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Create Element vs Clone Element</title>
+
+  <link rel="stylesheet" href="notes.css">
+
+</head>
+
+<body>
+
+  <h2>Difference Between <code>createElement()</code> and <code>cloneNode()</code></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th><code>document.createElement()</code></th>
+        <th><code>node.cloneNode()</code></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Purpose</strong></td>
+        <td>Creates a brand-new, empty DOM element from scratch.</td>
+        <td>Creates a duplicate copy of an existing DOM node.</td>
+      </tr>
+      <tr>
+        <td><strong>Input Required</strong></td>
+        <td>Requires a tag name string (e.g., <code>'div'</code>, <code>'button'</code>).</td>
+        <td>Requires an existing DOM node reference (e.g., <code>element.cloneNode()</code>).</td>
+      </tr>
+      <tr>
+        <td><strong>Attributes & Content</strong></td>
+        <td>Starts empty. You must manually add text, classes, IDs, and styles.</td>
+        <td>Copies all attributes, classes, styles, and content from the original node.</td>
+      </tr>
+      <tr>
+        <td><strong>Deep vs. Shallow Option</strong></td>
+        <td>Not applicable (creates a single empty node).</td>
+        <td>
+          <strong>Shallow (<code>false</code>):</strong> Clones only the shell.<br>
+          <strong>Deep (<code>true</code>):</strong> Clones the node and all child elements/text.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Event Listeners Handling</strong></td>
+        <td>N/A (listeners must be added using <code>addEventListener()</code>).</td>
+        <td>Copies inline HTML events (e.g., <code>onclick="..."</code>), but does <strong>not</strong> copy listeners added via <code>addEventListener()</code>.</td>
+      </tr>
+      <tr>
+        <td><strong>Best Use Case</strong></td>
+        <td>Building dynamic UI components from scratch using JavaScript data.</td>
+        <td>Duplicating complex HTML structures or template tags quickly.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Note on cloneNode parameters:</h2>
+
+  <ul>
+    <li><strong>element.cloneNode(true) (Deep copy):</strong> Copies the element, its attributes, and all child elements and text inside it.</li>
+    <li><strong>element.cloneNode(false) (Shallow copy):</strong> Copies only the element itself and its attributes, leaving out any internal text or child elements.</li>
+  </ul>
+
+</body>
+</html>
