@@ -1,16 +1,19 @@
 // Create an Paragraph Element
 const Paragraph = document.createElement('p')
 
-// Add Content to it
+
+// Adding Content to it
 Paragraph.textContent = 'This text was created using only pure DOM methods!';
 
-// Add a class and inline styling
+
+// Adding a class and inline styling
 Paragraph.className = 'para';
 Paragraph.style.color = 'white';
 Paragraph.style.backgroundColor = 'crimson';
 Paragraph.style.fontSize = '30px';
 
-// Append it to the <body> element of the page
+
+// Append it to the <body> element of the page Directly
 document.body.appendChild(Paragraph);
 
 
@@ -19,16 +22,24 @@ document.body.appendChild(Paragraph);
 
 // Create a button element
 const btn = document.createElement('button');
-
-// Label and ID for Button
 btn.textContent = 'Click Me';
-btn.id = 'my-button';
 
-// Attach click event
+
+// Adding click event
 btn.addEventListener('click', () => {
-    alert('Button Clicked!');
+  alert('Button clicked!');
 });
 
-// Select container and append button
-const container = document.getElementById('container');
-container.appendChild(btn);
+
+// Applying style to button
+btn.style.backgroundColor = '#007bff';
+btn.style.color = 'white';
+btn.style.padding = '10px 20px';
+btn.style.border = 'none';
+btn.style.borderRadius = '5px';
+btn.style.fontSize = '18px';
+btn.style.cursor = 'pointer';
+
+
+// Append it to <body> element of the page Directly
+document.body.appendChild(btn);
