@@ -1,8 +1,10 @@
 const container = document.getElementById('container');
 
-// ==========================================
-// 1. USING document.createElement()
-// ==========================================
+
+
+// USING document.createElement()
+
+
 // Must build the element from scratch step-by-step
 const createdBox = document.createElement('div');
 createdBox.className = 'box';
@@ -24,9 +26,11 @@ createdBox.appendChild(createdText);
 container.appendChild(createdBox);
 
 
-// ==========================================
-// 2. USING node.cloneNode(true)
-// ==========================================
+
+
+// USING node.cloneNode(true)
+
+
 // Select the existing original element
 const originalBox = document.getElementById('original-box');
 
